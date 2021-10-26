@@ -309,7 +309,8 @@ class OneyuanMatchTable extends React.Component {
         this.setState({
             record: record,
         });
-        this.showStatisticsDialog();
+        // this.showStatisticsDialog();
+        this.showScoreDialog();
     };
     showScoreDialog = () => {
         this.setState({dialogScoreVisible: true});

@@ -225,7 +225,7 @@ class OneyuanLeagueSeriesAddDialog extends React.Component {
                                 initialValue: 0
                             })(
                                 <RadioGroup>
-                                    <Radio value={0}>绝杀时刻</Radio>
+                                    <Radio value={0}>一元体育</Radio>
                                 </RadioGroup>
                             )}
                         </FormItem>

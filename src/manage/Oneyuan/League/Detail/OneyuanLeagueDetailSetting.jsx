@@ -114,22 +114,22 @@ class OneyuanLeagueDetailSetting extends React.Component {
                 }
             })
         }
-        if (checkedValues.includes("encryption")) {
-            this.setState({encryptionAllLoading: true})
-            leagueEncryptionAllMatch({leagueId: leagueId}).then(data => {
-                if (data && data.code == 200) {
-                    if (data.data) {
-                        message.success('加密应用成功', 1);
-                        // this.refresh();
-                    } else {
-                        message.warn(data.message, 1);
-                    }
-                    this.setState({encryptionAllLoading: false})
-                } else {
-                    message.error('加密应用失败：' + (data ? data.result + "-" + data.message : data), 3);
-                }
-            })
-        }
+        // if (checkedValues.includes("encryption")) {
+        //     this.setState({encryptionAllLoading: true})
+        //     leagueEncryptionAllMatch({leagueId: leagueId}).then(data => {
+        //         if (data && data.code == 200) {
+        //             if (data.data) {
+        //                 message.success('加密应用成功', 1);
+        //                 // this.refresh();
+        //             } else {
+        //                 message.warn(data.message, 1);
+        //             }
+        //             this.setState({encryptionAllLoading: false})
+        //         } else {
+        //             message.error('加密应用失败：' + (data ? data.result + "-" + data.message : data), 3);
+        //         }
+        //     })
+        // }
     }
     onApplyConfirmClick = () => {
         this.setState({applyConfirmShow: true})
@@ -177,11 +177,11 @@ class OneyuanLeagueDetailSetting extends React.Component {
                                             `/oneyuan/league/clip?leagueId=${leagueId}`
                                         }>剪辑</Link>
                                     </Button>
-                                    <Button key="encryption" loading={this.state.encryptionAllLoading} type="primary">
-                                        <Link to={
-                                            `/oneyuan/league/encryption?leagueId=${leagueId}`
-                                        }>加密</Link>
-                                    </Button>
+                                    {/*<Button key="encryption" loading={this.state.encryptionAllLoading} type="primary">*/}
+                                    {/*    <Link to={*/}
+                                    {/*        `/oneyuan/league/encryption?leagueId=${leagueId}`*/}
+                                    {/*    }>加密</Link>*/}
+                                    {/*</Button>*/}
                                     {/*<Button key="ad" type="primary"><Link to={*/}
                                     {/*    `/oneyuan/league/ad?leagueId=${leagueId}`*/}
                                     {/*}>广告</Link>*/}
@@ -191,11 +191,11 @@ class OneyuanLeagueDetailSetting extends React.Component {
                                             `/oneyuan/league/registration?leagueId=${leagueId}`
                                         }>报名</Link>
                                     </Button>
-                                    <Button key="statistics" type="primary">
-                                        <Link to={
-                                            `/oneyuan/league/statistics?leagueId=${leagueId}`
-                                        }>统计</Link>
-                                    </Button>
+                                    {/*<Button key="statistics" type="primary">*/}
+                                    {/*    <Link to={*/}
+                                    {/*        `/oneyuan/league/statistics?leagueId=${leagueId}`*/}
+                                    {/*    }>统计</Link>*/}
+                                    {/*</Button>*/}
                                 </div>
                                 <div className="w-full center mt-l">
                                     <Button key="all" type="primary" onClick={this.onApplyConfirmClick}>
@@ -231,9 +231,9 @@ class OneyuanLeagueDetailSetting extends React.Component {
                             <Col span={24} className="mt-s">
                                 <Checkbox value="clip">剪辑</Checkbox>
                             </Col>
-                            <Col span={24} className="mt-s">
-                                <Checkbox value="encryption">加密</Checkbox>
-                            </Col>
+                            {/*<Col span={24} className="mt-s">*/}
+                            {/*    <Checkbox value="encryption">加密</Checkbox>*/}
+                            {/*</Col>*/}
                         </Row>
                     </Checkbox.Group>
                     <span style={{fontSize: 14}}>是否确认将以上设置应用到该联赛中的全部比赛？</span>

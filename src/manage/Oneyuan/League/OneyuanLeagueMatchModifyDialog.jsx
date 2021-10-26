@@ -234,7 +234,7 @@ class OneyuanLeagueMatchModifyDialog extends React.Component {
                                 initialValue: record.wechatType
                             })(
                                 <RadioGroup>
-                                    <Radio value={0}>绝杀时刻</Radio>
+                                    <Radio value={0}>一元体育</Radio>
                                 </RadioGroup>
                             )}
                         </FormItem>

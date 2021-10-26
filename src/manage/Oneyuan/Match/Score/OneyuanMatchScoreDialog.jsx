@@ -20,13 +20,14 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import defultAvatar from '../../../../static/avatar.jpg';
 import vs from '../../../../static/vs.png';
-import start from '../../../../static/start.svg';
+import finish from '../../../../static/finish.svg';
 import flag from "../../../../static/flag.svg";
-import calendar from "../../../../static/calendar.svg";
+import section_pre from "../../../../static/section_pre.svg";
+import section_next from "../../../../static/section_next.svg";
 import ball from "../../../../static/ball.svg";
 import ball2 from "../../../../static/ball2.svg";
 import ball3 from "../../../../static/ball3.svg";
-import vest from "../../../../static/vest.svg";
+import switch_against from "../../../../static/switch_against.svg";
 import {
     getTimelineByMatchId,
     getMatchStatus,
@@ -47,24 +48,24 @@ const status = {
 };
 
 const eventType = {
-    0: {text: "比赛开始", icon: start},
+    0: {text: "比赛开始", icon: finish},
     1: {text: "一分球", icon: ball,},
     2: {text: "二分球", icon: ball2,},
     3: {text: "三分球", icon: ball3,},
     11: {text: "一分球撤销", icon: ball,},
     12: {text: "二分球撤销", icon: ball2,},
     13: {text: "三分球撤销", icon: ball3,},
-    4: {text: "下一节", icon: calendar, hidden: true},
-    5: {text: "切换对阵", icon: vest, hidden: true},
-    14: {text: "上一节", icon: calendar, hidden: true},
+    4: {text: "下一节", icon: section_next, hidden: true},
+    5: {text: "切换对阵", icon: switch_against, hidden: true},
+    14: {text: "上一节", icon: section_pre, hidden: true},
     21: {text: "比赛结束", icon: flag},
 }
 const statusEvent = [
-    {key: 0, text: "比赛开始", icon: start, show: 1},
-    {key: 5, text: "切换对阵", icon: vest, show: 1},
+    {key: 0, text: "比赛开始", icon: finish, show: 1},
+    {key: 5, text: "切换对阵", icon: switch_against, show: 1},
     {key: 21, text: "比赛结束", icon: flag, show: 1},
-    {key: 4, text: "下一节", icon: calendar, show: 1},
-    {key: 14, text: "上一节", icon: calendar, show: 1},
+    {key: 4, text: "下一节", icon: section_next, show: 1},
+    {key: 14, text: "上一节", icon: section_pre, show: 1},
 ]
 moment.locale('zh-cn');
 
@@ -171,7 +172,7 @@ class OneyuanMatchScoreDialog extends React.Component {
                             {item.againstIndex ? `(对阵${item.againstIndex})` : null}{item.section ? `(第${item.section}节)` : null}
                         </span>
                     </div>
-                    const againstMap = this.state.data ? this.state.data.againstTeams : {};
+                    const againstMap = this.state.data && this.state.data.againstTeams ? this.state.data.againstTeams : {};
                     let isHost = false;
                     Object.keys(againstMap).forEach(key => {
                         if (key = item.againstIndex) {

@@ -22,7 +22,6 @@ import defultAvatar from '../../../../static/avatar.jpg';
 import vs from '../../../../static/vs.png';
 import start from '../../../../static/start.svg';
 import flag from "../../../../static/flag.svg";
-import calendar from "../../../../static/calendar.svg";
 import ball from "../../../../static/ball.svg";
 import ball2 from "../../../../static/ball2.svg";
 import ball3 from "../../../../static/ball3.svg";
@@ -308,7 +307,7 @@ class OneyuanMatchScoreDialog extends React.Component {
                             {item.againstIndex ? `(对阵${item.againstIndex})` : null}{item.section ? `(第${item.section}节)` : null}
                         </span>
                     </div>
-                    const againstMap = this.state.data ? this.state.data.againstTeams : {};
+                    const againstMap = this.state.data && this.state.data.againstTeams ? this.state.data.againstTeams : {};
                     let isHost = false;
                     Object.keys(againstMap).forEach(key => {
                         if (key = item.againstIndex) {
