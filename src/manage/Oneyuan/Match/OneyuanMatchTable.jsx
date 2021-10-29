@@ -977,18 +977,18 @@ class OneyuanMatchTable extends React.Component {
                             `/oneyuan/match/heat?matchId=${this.state.record.id}`
                         }>热度</Link>
                     </Button>,
-                    <Button key="bet" type="primary" className="pull-left"><Link to={
-                        `/oneyuan/match/bet?matchId=${this.state.record.id}`
-                    }>竞猜</Link>
-                    </Button>,
-                    <Button key="bet" type="primary" className="pull-left"><Link to={
-                        `/oneyuan/match/clip?matchId=${this.state.record.id}`
-                    }>剪辑</Link>
-                    </Button>,
-                    <Button key="bet" type="primary" className="pull-left"><Link to={
-                        `/oneyuan/match/encryption?matchId=${this.state.record.id}`
-                    }>加密</Link>
-                    </Button>,
+                    // <Button key="bet" type="primary" className="pull-left"><Link to={
+                    //     `/oneyuan/match/bet?matchId=${this.state.record.id}`
+                    // }>竞猜</Link>
+                    // </Button>,
+                    // <Button key="bet" type="primary" className="pull-left"><Link to={
+                    //     `/oneyuan/match/clip?matchId=${this.state.record.id}`
+                    // }>剪辑</Link>
+                    // </Button>,
+                    // <Button key="bet" type="primary" className="pull-left"><Link to={
+                    //     `/oneyuan/match/encryption?matchId=${this.state.record.id}`
+                    // }>加密</Link>
+                    // </Button>,
                     <Button key="delete" type="danger" className="pull-left"
                             onClick={this.handleDelete}>删除</Button>,
                     // <Button key="back" onClick={this.handleMatchModifyCancel}>取消</Button>,

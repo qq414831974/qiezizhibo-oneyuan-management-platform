@@ -81,7 +81,7 @@ class LeagueMemberForm extends React.Component {
                                         initialValue: record.price ? NP.divide(record.price, 100) : null,
                                         rules: [{required: true, message: '请输入价格!'}],
                                     })(
-                                        <Input addonBefore="永久" placeholder='价格' addonAfter="元/茄币"/>
+                                        <Input addonBefore="永久" placeholder='价格' addonAfter="元/1元币"/>
                                     )}
                                 </FormItem>
                             </div> : null}

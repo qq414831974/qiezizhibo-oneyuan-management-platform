@@ -80,14 +80,14 @@ class Login extends React.Component {
         const {getFieldDecorator} = this.props.form;
         const user = getUser();
         return (
-            <DocumentTitle title="一元体育后台管理系统登陆">
+            <DocumentTitle title="1元体育后台管理系统登陆">
                 <div className="login">
                     <div className="login-form">
                         <div className="login-logo">
                             <Avatar src={logo} size="large"/>
                         </div>
                         <div className="login-logo">
-                            <span>一元体育</span>
+                            <span>1元体育</span>
                         </div>
                         <Form onSubmit={this.handleSubmit} style={{maxWidth: '300px'}}>
                             <FormItem>
@@ -125,7 +125,7 @@ class Login extends React.Component {
                         </Form>
                     </div>
                     <div className="w-full center" style={{position:"fixed",bottom:0,padding:"10px",textAlign:"center",background:"#fff"}}>
-                        <div>©2021 一元体育</div>
+                        <div>©2021 1元体育</div>
                         <a href="https://beian.miit.gov.cn/" target="_blank">
                             <span className="ml-l" style={{textDecoration:"underline"}}>闽ICP备17018408号-1</span>
                         </a>

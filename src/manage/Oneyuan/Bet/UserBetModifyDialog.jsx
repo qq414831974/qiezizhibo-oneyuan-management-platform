@@ -93,7 +93,7 @@ class UserBetModifyDialog extends React.Component {
             <div>档位:{record.gradeInfo.grade}</div>
             <div>价格:{record.gradeInfo.price / 100}元</div>
             {record.gradeInfo.award ? <div>奖品:{record.gradeInfo.award}</div> :
-                <div>奖品:{record.gradeInfo.awardDeposit / 100}茄币</div>}
+                <div>奖品:{record.gradeInfo.awardDeposit / 100}1元币</div>}
         </div>;
         const match = record.match;
         let matchDom = [];

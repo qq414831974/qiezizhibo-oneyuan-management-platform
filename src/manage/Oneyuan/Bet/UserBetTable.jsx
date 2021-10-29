@@ -293,7 +293,7 @@ class UserBetTable extends React.Component {
                             <div>档位:{record.gradeInfo.grade}</div>
                             <div>价格:{NP.divide(record.gradeInfo.price, 100)}元</div>
                             {record.gradeInfo.award ? <div>奖品:{record.gradeInfo.award}</div> :
-                                <div>奖品:{NP.divide(record.gradeInfo.awardDeposit, 100)}茄币</div>}
+                                <div>奖品:{NP.divide(record.gradeInfo.awardDeposit, 100)}1元币</div>}
                         </div>;
                         return <Tooltip title={gradeInfoDom}><span>{record.grade}</span></Tooltip>;
                     }

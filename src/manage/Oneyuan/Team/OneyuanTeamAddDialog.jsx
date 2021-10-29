@@ -155,7 +155,7 @@ class OneyuanTeamAddDialog extends React.Component {
                                 initialValue: 0,
                             })(
                                 <Select placeholder='请选择微信类型!'>
-                                    <Option value={0} key={"wechatType-0"}>一元体育</Option>
+                                    <Option value={0} key={"wechatType-0"}>1元体育</Option>
                                     <Option value={1} key={"wechatType-1"}>青少年</Option>
                                     <Option value={2} key={"wechatType-2"}>茄子FC</Option>
                                 </Select>

@@ -150,7 +150,7 @@ class LeagueBetForm extends React.Component {
                                 initialValue: grades[i].price ? NP.divide(grades[i].price, 100) : null,
                             })(
                                 <Input
-                                    addonAfter="元/茄币"
+                                    addonAfter="元/1元币"
                                     className="w-full"
                                     placeholder='请输入价格!'/>
                             )}
@@ -173,19 +173,19 @@ class LeagueBetForm extends React.Component {
                             <Radio.Group onChange={this.onGradeAwardRadioChange.bind(this, i)}
                                          value={this.state.gradeAwardRadio[i]}>
                                 <Radio value={"gift"}>送奖品</Radio>
-                                <Radio value={"money"}>送茄币</Radio>
+                                <Radio value={"money"}>送1元币</Radio>
                             </Radio.Group>
                         </div>
                         {this.state.gradeAwardRadio[i] == "money" ?
-                            <FormItem {...formItemLayout} label="茄币：" className="bs-form-item">
+                            <FormItem {...formItemLayout} label="1元币：" className="bs-form-item">
                                 {getFieldDecorator(`gradeInfo[${i}].awardDeposit`, {
-                                    rules: [{required: true, message: '请输入茄币!'}],
+                                    rules: [{required: true, message: '请输入1元币!'}],
                                     initialValue: grades[i].awardDeposit ? NP.divide(grades[i].awardDeposit, 100) : null,
                                 })(
                                     <Input
-                                        addonAfter="元/茄币"
+                                        addonAfter="元/1元币"
                                         className="w-full"
-                                        placeholder='请输入茄币!'/>
+                                        placeholder='请输入1元币!'/>
                                 )}
                             </FormItem> : <FormItem {...formItemLayout} label="奖品：" className="bs-form-item">
                                 {getFieldDecorator(`gradeInfo[${i}].award`, {

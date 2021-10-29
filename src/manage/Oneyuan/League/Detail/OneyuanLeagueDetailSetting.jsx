@@ -82,38 +82,38 @@ class OneyuanLeagueDetailSetting extends React.Component {
                 }
             })
         }
-        if (checkedValues.includes("bet")) {
-            this.setState({betAllLoading: true})
-            leagueBetAllMatch({leagueId: leagueId}).then(data => {
-                if (data && data.code == 200) {
-                    if (data.data) {
-                        message.success('竞猜应用成功', 1);
-                        // this.refresh();
-                    } else {
-                        message.warn(data.message, 1);
-                    }
-                    this.setState({betAllLoading: false})
-                } else {
-                    message.error('竞猜应用失败：' + (data ? data.result + "-" + data.message : data), 3);
-                }
-            })
-        }
-        if (checkedValues.includes("clip")) {
-            this.setState({clipAllLoading: true})
-            leagueClipAllMatch({leagueId: leagueId}).then(data => {
-                if (data && data.code == 200) {
-                    if (data.data) {
-                        message.success('自动剪辑应用成功', 1);
-                        // this.refresh();
-                    } else {
-                        message.warn(data.message, 1);
-                    }
-                    this.setState({clipAllLoading: false})
-                } else {
-                    message.error('自动剪辑应用失败：' + (data ? data.result + "-" + data.message : data), 3);
-                }
-            })
-        }
+        // if (checkedValues.includes("bet")) {
+        //     this.setState({betAllLoading: true})
+        //     leagueBetAllMatch({leagueId: leagueId}).then(data => {
+        //         if (data && data.code == 200) {
+        //             if (data.data) {
+        //                 message.success('竞猜应用成功', 1);
+        //                 // this.refresh();
+        //             } else {
+        //                 message.warn(data.message, 1);
+        //             }
+        //             this.setState({betAllLoading: false})
+        //         } else {
+        //             message.error('竞猜应用失败：' + (data ? data.result + "-" + data.message : data), 3);
+        //         }
+        //     })
+        // }
+        // if (checkedValues.includes("clip")) {
+        //     this.setState({clipAllLoading: true})
+        //     leagueClipAllMatch({leagueId: leagueId}).then(data => {
+        //         if (data && data.code == 200) {
+        //             if (data.data) {
+        //                 message.success('自动剪辑应用成功', 1);
+        //                 // this.refresh();
+        //             } else {
+        //                 message.warn(data.message, 1);
+        //             }
+        //             this.setState({clipAllLoading: false})
+        //         } else {
+        //             message.error('自动剪辑应用失败：' + (data ? data.result + "-" + data.message : data), 3);
+        //         }
+        //     })
+        // }
         // if (checkedValues.includes("encryption")) {
         //     this.setState({encryptionAllLoading: true})
         //     leagueEncryptionAllMatch({leagueId: leagueId}).then(data => {
@@ -167,16 +167,16 @@ class OneyuanLeagueDetailSetting extends React.Component {
                                             `/oneyuan/league/heat?leagueId=${leagueId}`
                                         }>热度</Link>
                                     </Button>
-                                    <Button key="bet" loading={this.state.betAllLoading} type="primary">
-                                        <Link to={
-                                            `/oneyuan/league/bet?leagueId=${leagueId}`
-                                        }>竞猜</Link>
-                                    </Button>
-                                    <Button key="clip" loading={this.state.clipAllLoading} type="primary">
-                                        <Link to={
-                                            `/oneyuan/league/clip?leagueId=${leagueId}`
-                                        }>剪辑</Link>
-                                    </Button>
+                                    {/*<Button key="bet" loading={this.state.betAllLoading} type="primary">*/}
+                                    {/*    <Link to={*/}
+                                    {/*        `/oneyuan/league/bet?leagueId=${leagueId}`*/}
+                                    {/*    }>竞猜</Link>*/}
+                                    {/*</Button>*/}
+                                    {/*<Button key="clip" loading={this.state.clipAllLoading} type="primary">*/}
+                                    {/*    <Link to={*/}
+                                    {/*        `/oneyuan/league/clip?leagueId=${leagueId}`*/}
+                                    {/*    }>剪辑</Link>*/}
+                                    {/*</Button>*/}
                                     {/*<Button key="encryption" loading={this.state.encryptionAllLoading} type="primary">*/}
                                     {/*    <Link to={*/}
                                     {/*        `/oneyuan/league/encryption?leagueId=${leagueId}`*/}
@@ -225,12 +225,12 @@ class OneyuanLeagueDetailSetting extends React.Component {
                             <Col span={24} className="mt-s">
                                 <Checkbox value="heat">热度</Checkbox>
                             </Col>
-                            <Col span={24} className="mt-s">
-                                <Checkbox value="bet">竞猜</Checkbox>
-                            </Col>
-                            <Col span={24} className="mt-s">
-                                <Checkbox value="clip">剪辑</Checkbox>
-                            </Col>
+                            {/*<Col span={24} className="mt-s">*/}
+                            {/*    <Checkbox value="bet">竞猜</Checkbox>*/}
+                            {/*</Col>*/}
+                            {/*<Col span={24} className="mt-s">*/}
+                            {/*    <Checkbox value="clip">剪辑</Checkbox>*/}
+                            {/*</Col>*/}
                             {/*<Col span={24} className="mt-s">*/}
                             {/*    <Checkbox value="encryption">加密</Checkbox>*/}
                             {/*</Col>*/}

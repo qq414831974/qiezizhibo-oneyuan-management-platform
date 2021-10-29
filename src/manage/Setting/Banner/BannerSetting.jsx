@@ -12,7 +12,7 @@ import {Link} from "react-router-dom";
 const RadioGroup = Radio.Group;
 
 const areaType = {0: "默认", 1: "全国"}
-const wechatType = {0: "一元体育", 1: "青少年", 2: "茄子fc"}
+const wechatType = {0: "1元体育", 1: "青少年", 2: "茄子fc"}
 
 class BannerSetting extends React.Component {
     state = {data: []}
@@ -172,7 +172,7 @@ class BannerSetting extends React.Component {
                         loading={this.state.loading}
                         itemLayout="horizontal"
                         size="large"
-                        header="一元体育"
+                        header="1元体育"
                         renderItem={(item) => (<List.Item className="pa-s">
                             <Card
                                 hoverable

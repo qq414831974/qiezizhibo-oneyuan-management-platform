@@ -151,7 +151,7 @@ class BannerModifyDialog extends React.Component {
                             initialValue: record.wechatType
                         })(
                             <RadioGroup>
-                                <Radio value={0}>一元体育</Radio>
+                                <Radio value={0}>1元体育</Radio>
                                 <Radio value={1}>青少年</Radio>
                             </RadioGroup>
                         )}

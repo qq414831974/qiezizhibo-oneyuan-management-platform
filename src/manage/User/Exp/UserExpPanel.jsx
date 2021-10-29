@@ -87,7 +87,7 @@ class UserExpPanel extends React.Component {
                          <Descriptions column={6} bordered>
                              <Descriptions.Item label="等级" span={6}>{`${this.state.data && this.state.data.level ? this.state.data.level : "未知"} 级`}</Descriptions.Item>
                              <Descriptions.Item label="经验" span={3}>{this.state.data && this.state.data.exp ? this.state.data.exp :0}</Descriptions.Item>
-                             <Descriptions.Item label="充值金额" span={3}>{`${this.state.data && this.state.data.coinCount ? this.state.data.coinCount / 100 :0} 茄币`}</Descriptions.Item>
+                             <Descriptions.Item label="充值金额" span={3}>{`${this.state.data && this.state.data.coinCount ? this.state.data.coinCount / 100 :0} 1元币`}</Descriptions.Item>
                          </Descriptions>
                          <div className="w-full center ma-s">
                              <Button type="primary" onClick={this.showModifyDialog}>修改</Button>

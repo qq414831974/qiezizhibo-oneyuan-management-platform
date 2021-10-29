@@ -90,7 +90,7 @@ class App extends Component {
             return <div/>
         }
         return (
-            <DocumentTitle title="一元体育后台管理系统">
+            <DocumentTitle title="1元体育后台管理系统">
                 <Layout>
                     <SiderCustom collapsed={this.state.collapsed} ontoggle={this.toggle}/>
                     {(responsive.data.isMobile && !this.state.collapsed)

@@ -119,7 +119,7 @@ class Dashboard extends React.Component {
                         <div className="gutter-box">
                             <Card bordered={false} style={{height: 214}}>
                                 <div className="w-full center"><img src={logo} className="round-img"/></div>
-                                <span style={{fontSize: 20}} className="w-full center mt-s">欢迎来到一元体育后台管理</span>
+                                <span style={{fontSize: 20}} className="w-full center mt-s">欢迎来到1元体育后台管理</span>
                             </Card>
                         </div>
                     </Col>

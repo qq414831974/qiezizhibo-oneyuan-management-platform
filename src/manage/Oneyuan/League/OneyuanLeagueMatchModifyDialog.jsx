@@ -234,7 +234,7 @@ class OneyuanLeagueMatchModifyDialog extends React.Component {
                                 initialValue: record.wechatType
                             })(
                                 <RadioGroup>
-                                    <Radio value={0}>一元体育</Radio>
+                                    <Radio value={0}>1元体育</Radio>
                                 </RadioGroup>
                             )}
                         </FormItem>
@@ -255,7 +255,7 @@ class OneyuanLeagueMatchModifyDialog extends React.Component {
                                 initialValue: record.ruleType
                             })(
                                 <RadioGroup>
-                                    <Radio value={1}>小篮比赛</Radio>
+                                    <Radio value={1}>儿童比赛</Radio>
                                     <Radio value={2}>1x1</Radio>
                                     <Radio value={3}>3x3</Radio>
                                     <Radio value={4}>5x5</Radio>

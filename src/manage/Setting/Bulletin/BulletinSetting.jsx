@@ -260,11 +260,11 @@ class BulletinSetting extends React.Component {
             width: '10%',
             align: 'center',
             render: function (text, record, index) {
-                let type = "一元体育";
+                let type = "1元体育";
                 if (record.wechatType) {
                     switch (record.wechatType) {
                         case 0:
-                            type = "一元体育";
+                            type = "1元体育";
                             break;
                         case 1:
                             type = "青少年";

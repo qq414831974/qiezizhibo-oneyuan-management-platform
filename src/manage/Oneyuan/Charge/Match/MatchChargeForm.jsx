@@ -90,7 +90,7 @@ class MatchChargeForm extends React.Component {
                                                 initialValue: record.live && record.live.price != null ? NP.divide(record.live.price, 100) : null,
                                                 rules: [{required: true, message: '请输入永久价格!'}],
                                             })(
-                                                <Input addonBefore="永久" placeholder='价格' addonAfter="元/茄币"/>
+                                                <Input addonBefore="永久" placeholder='价格' addonAfter="元/1元币"/>
                                             )}
                                         </FormItem>
                                         <FormItem {...formItemLayout} label="一个月价格" className="bs-form-item">
@@ -98,7 +98,7 @@ class MatchChargeForm extends React.Component {
                                                 initialValue: record.live && record.live.priceMonthly != null ? NP.divide(record.live.priceMonthly, 100) : null,
                                                 rules: [{required: true, message: '请输入一个月价格价格!'}],
                                             })(
-                                                <Input addonBefore="一月" placeholder='价格' addonAfter="元/茄币"/>
+                                                <Input addonBefore="一月" placeholder='价格' addonAfter="元/1元币"/>
                                             )}
                                         </FormItem>
                                     </div> : null}
@@ -136,7 +136,7 @@ class MatchChargeForm extends React.Component {
                                                 initialValue: record.record && record.record.price ? NP.divide(record.record.price, 100) : null,
                                                 rules: [{required: true, message: '请输入永久价格!'}],
                                             })(
-                                                <Input addonBefore="永久" placeholder='价格' addonAfter="元/茄币"/>
+                                                <Input addonBefore="永久" placeholder='价格' addonAfter="元/1元币"/>
                                             )}
                                         </FormItem>
                                         <FormItem {...formItemLayout} label="一个月价格" className="bs-form-item">
@@ -144,7 +144,7 @@ class MatchChargeForm extends React.Component {
                                                 initialValue: record.record && record.record.priceMonthly ? NP.divide(record.record.priceMonthly, 100) : null,
                                                 rules: [{required: true, message: '请输入一个月价格价格!'}],
                                             })(
-                                                <Input addonBefore="一月" placeholder='价格' addonAfter="元/茄币"/>
+                                                <Input addonBefore="一月" placeholder='价格' addonAfter="元/1元币"/>
                                             )}
                                         </FormItem>
                                         <FormItem {...formItemLayout} label="送礼看录播" className="bs-form-item">
@@ -163,7 +163,7 @@ class MatchChargeForm extends React.Component {
                                                         initialValue: record.record && record.record.giftWatchPrice ? NP.divide(record.record.giftWatchPrice, 100) : null,
                                                         rules: [{required: true, message: '请输入永久价格!'}],
                                                     })(
-                                                        <Input addonBefore="永久" placeholder='价格' addonAfter="元/茄币"/>
+                                                        <Input addonBefore="永久" placeholder='价格' addonAfter="元/1元币"/>
                                                     )}
                                                 </FormItem>
                                                 <FormItem {...formItemLayout} label="送礼一月看录播" className="bs-form-item">
@@ -171,7 +171,7 @@ class MatchChargeForm extends React.Component {
                                                         initialValue: record.record && record.record.giftWatchPriceMonthly ? NP.divide(record.record.giftWatchPriceMonthly, 100) : null,
                                                         rules: [{required: true, message: '请输入一个月价格价格!'}],
                                                     })(
-                                                        <Input addonBefore="一月" placeholder='价格' addonAfter="元/茄币"/>
+                                                        <Input addonBefore="一月" placeholder='价格' addonAfter="元/1元币"/>
                                                     )}
                                                 </FormItem>
                                             </div> : null}
@@ -198,7 +198,7 @@ class MatchChargeForm extends React.Component {
                                         initialValue: record.monopoly && record.monopoly.price? NP.divide(record.monopoly.price, 100) : null,
                                         rules: [{required: true, message: '请输入买断价格!'}],
                                     })(
-                                        <Input addonBefore="永久" placeholder='价格' addonAfter="元/茄币"/>
+                                        <Input addonBefore="永久" placeholder='价格' addonAfter="元/1元币"/>
                                     )}
                                 </FormItem> : null}
                             </Card>

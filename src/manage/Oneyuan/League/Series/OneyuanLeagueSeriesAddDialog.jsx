@@ -225,7 +225,7 @@ class OneyuanLeagueSeriesAddDialog extends React.Component {
                                 initialValue: 0
                             })(
                                 <RadioGroup>
-                                    <Radio value={0}>一元体育</Radio>
+                                    <Radio value={0}>1元体育</Radio>
                                 </RadioGroup>
                             )}
                         </FormItem>
@@ -246,7 +246,7 @@ class OneyuanLeagueSeriesAddDialog extends React.Component {
                                 initialValue: 4
                             })(
                                 <RadioGroup>
-                                    <Radio value={1}>小篮比赛</Radio>
+                                    <Radio value={1}>儿童比赛</Radio>
                                     <Radio value={2}>1x1</Radio>
                                     <Radio value={3}>3x3</Radio>
                                     <Radio value={4}>5x5</Radio>

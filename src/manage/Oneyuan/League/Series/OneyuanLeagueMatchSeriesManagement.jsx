@@ -313,7 +313,7 @@ class OneyuanLeagueMatchSeriesManagement extends React.Component {
             render: function (text, record, index) {
                 let type = "5x5";
                 if (record.ruleType == 1) {
-                    type = "小篮比赛";
+                    type = "儿童比赛";
                 } else if (record.ruleType == 2) {
                     type = "1x1";
                 } else if (record.ruleType == 3) {
@@ -366,11 +366,11 @@ class OneyuanLeagueMatchSeriesManagement extends React.Component {
             width: '5%',
             align: 'center',
             render: function (text, record, index) {
-                let type = "一元体育";
+                let type = "1元体育";
                 if (record.wechatType) {
                     switch (record.wechatType) {
                         case 0:
-                            type = "一元体育";
+                            type = "1元体育";
                             break;
                         case 1:
                             type = "青少年";

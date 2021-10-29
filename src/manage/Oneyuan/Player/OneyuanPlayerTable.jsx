@@ -370,7 +370,7 @@ class OneyuanPlayerTable extends React.Component {
                 let type = "未知"
                 switch (record.wechatType) {
                     case 0 :
-                        type = "一元体育";
+                        type = "1元体育";
                         break;
                     case 1 :
                         type = "青少年";
